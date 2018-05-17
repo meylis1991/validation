@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	 <title>Document</title>
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	 <link rel="stylesheet" href="style.css">
+	 
+	 
+ </head>
+ <body>
+	<div id="wrapper">
+		<form method="POST" action="success.php" onsubmit="return" name="vform">
+			<div class="bloc">
+					<select id="gender" name="gender">
+						<option value="NULL">Gender</option>
+						<option value="Mr">Mr</option>
+						<option value="Mrs">Mrs</option>
+					</select>
+				<div id="gender_error" class="val_error"></div>
+			</div> 
+			<div class="bloc">
+				<p class="tages">First Name:</p>
+				<input type="text" name="fname" class="textInput" placeholder="First Name">
+				<div id="fname_error" class="val_error"></div>
+			</div>
+			<div class="bloc">
+					<p class="tages">Last Name:</p>
+					<input type="text" name="lname" class="textInput" placeholder="Last Name">
+					<div id="lname_error" class="val_error"></div>
+			</div>
+			<div class="bloc">
+					<p class="tages">Email:</p>
+					<input type="email" name="email" class="textInput" placeholder="Email exaple@mail.com">
+					<div id="email_error" class="val_error"></div>
+			</div>
+			<div class="bloc">
+					<p class="tages">Phone Number:</p>
+					<input type="text" name="phonenumber" class="textInput" placeholder="Phone Number">
+					<div id="phonenumber_error" class="val_error"></div>
+			</div>
+			
+			<div class="bloc">
+					<p class="tages">UserID, Username, E-Mail: </p>
+					<input type="text" name="useridentification" class="textInput" placeholder="UserID, Username, Email ..">
+					<div id="useridentification_error" class="val_error"></div>
+			</div>
+			<div class="bloc">
+					<p class="tages">Message:</p>
+					<p><textarea class="message" rows="10" cols="23" name="message"></textarea></p>
+			</div>
+			<div class="bloc">
+					<input type="submit" value="Submit" class="btn" name="submitbutton"/>
+			</div>
+			<p id="form-message"> </p>
+			
+  		</form>
+	</div> 
+	
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+ 
+</body>
+</html>

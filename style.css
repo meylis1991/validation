@@ -1,0 +1,65 @@
+body{
+    font-family: 'Open Sans', sans-serif
+}
+#wrapper{
+    width: 35%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9fdf5
+}
+form{
+    width: 50%;
+    margin: 100px auto;
+}
+form div{
+    margin:3px auto;
+}
+.textInput{
+    margin: 0em;
+    height: 2em;
+    border: 1px solid #5e6e66;
+    border-radius: 0.5em;
+    padding: 0.4em;  
+    font-size: 1em;
+}
+#gender{
+    margin: 0em;
+    height: 2em;
+    border: 1px solid #5e6e66;
+    border-radius: 0.5em;
+    padding: 0.4em;  
+    font-size: 1em;
+}
+.message{
+    margin: 0em;
+    border: 1px solid #5e6e66;
+    border-radius: 0.5em;
+    padding: 0.4em;  
+    font-size: 1em;
+
+}
+.btn{
+    font-size: 1.1em;
+    background-color: #20AEE3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5em;
+    padding: 7px;
+    width: 100%;
+}
+.val_error{
+    color: #ff1f1f
+}
+.val_success{
+    color: #05fa36
+}
+.tages{
+    margin: 0em;
+    margin-top: 1em;
+}
+.bloc{
+    margin: 0;
+    padding: 0;
+
+}
