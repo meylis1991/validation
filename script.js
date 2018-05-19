@@ -59,13 +59,26 @@ $(document).ready(function(){
         email.style.border = "1px solid #5e6e66";
         email_error.innerHTML = "";
         }
+        
+        var stripped = phonenumber.value.replace(/[\(\)\.\-\ ]/g, '');
 
         if (phonenumber.value == "") {
         phonenumber.style.border = "1px solid red";
-        phonenumber_error.textContent = "Phone Number is Required";
+        phonenumber_error.textContent = "Phone Number is Required\n";
+        phonenumber.focus();
+        ;
+        }else if (isNaN(parseInt(stripped))) {
+        phonenumber.style.border = "1px solid red";
+        phonenumber_error.textContent = "\nThe phone number contains illegal characters.\n";
+        phonenumber.focus();
+        
+        } else if (!(stripped.length == 12)){
+        phonenumber.style.border = "1px solid red";
+        phonenumber_error.textContent = "\nThe phone number is the wrong length. Make sure you included an area code.\n";
         phonenumber.focus();
         return false;
-        }else{
+        }
+        else{
         phonenumber.style.border = "1px solid #5e6e66";
         phonenumber_error.innerHTML = "";
         }       
